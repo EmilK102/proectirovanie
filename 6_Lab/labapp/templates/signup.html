@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Регистрация</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gijgo.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+<body>
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid ">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-2">
+                                <div class="logo">
+                                    <a href="/index">
+                                        <img src="img/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-7">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="/index">Просмотреть рейсы </a></li>
+                                            <li><a href="#">Авиакомпании <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="/index">Список компаний </a></li>
+                                                    <li><a href="/index">Отзывы </a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/index">Контакты</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="Appointment">
+                                    <div class="phone_num d-none d-xl-block">
+                                        <a href="/signin">Войти</a>
+                                    </div>
+                                    <div class="d-none d-lg-block">
+                                        <a class="boxed-btn3" href="/signup">Зарегистрироваться</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Регистрация</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="whole-wrap">
+		<div class="container box_1170">
+			<div class="section-top-border">
+				<div class="row">
+					<div class="col-lg-8 col-md-8">
+						<form action="#">
+							<div class="mt-10">
+								<input type="text" name="first_name" placeholder="Имя"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Имя'" required
+									class="single-input">
+							</div>
+							<div class="mt-10">
+								<input type="text" name="last_name" placeholder="Фамилия"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Фамилия'" required
+									class="single-input">
+							</div>
+							<div class="mt-10">
+								<input type="email" name="EMAIL" placeholder="Email"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" required
+									class="single-input">
+							</div>
+                            <div class="mt-10">
+								<input type="password" name="PASSWORD" placeholder="Пароль"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Пароль'" required
+									class="single-input">
+							</div>
+                            <div class="mt-10">
+								<input type="password" name="PASSWORD_R" placeholder="Подтвердите пароль"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Подтвердите пароль'" required
+									class="single-input">
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
+								<input type="text" name="address" placeholder="Адрес" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Address'" required class="single-input">
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+								<div class="form-select" id="default-select"">
+											<select>
+												<option value=" 1">Город</option>
+									<option value="1">Нью-Йорк</option>
+									<option value="1">Сиетл</option>
+									<option value="1">Токио</option>
+									</select>
+								</div>
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+								<div class="form-select" id="default-select"">
+											<select>
+												<option value=" 1">Страна</option>
+									<option value="1">Япония</option>
+									<option value="1">США</option>
+									<option value="1">Канада</option>
+									</select>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+                <p>Получать рассылку</p>
+                <div class="primary-switch">
+                    <input type="checkbox" id="default-switch" checked>
+                    <label for="default-switch"></label>
+                </div>
+                <div class="button-group-area mt-40">
+                    <a href="#" class="genric-btn primary radius">Зарегистрироваться</a>
+                </div>
+			</div>
+		</div>
+	</div>
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                            <p>
+                                superfly@support.com <br>
+                                +7 xxx xxx xx xx <br>
+                                600/D, Green road, NewYork
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget wow fadeInUp" data-wow-duration="1.1s" data-wow-delay=".4s">
+                            <h3 class="footer_title">
+                                Компания
+                            </h3>
+                            <ul>
+                                <li><a href="#">О нас </a></li>
+                                <li><a href="#">Реклама</a></li>
+                                <li><a href="#">ЧаВО</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".6s">
+                            <h3 class="footer_title">
+                                Подписаться
+                            </h3>
+                            <form action="#" class="newsletter_form">
+                                <input type="text" placeholder="Введи ваш email">
+                                <button type="submit">Подписаться</button>
+                            </form>
+                            <p class="newsletter_text">Подписаться на рассылку уведомлений на акции и новости сайта.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/ajax-form.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/waypoints.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.counterup.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/scrollIt.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.scrollUp.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/nice-select.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.slicknav.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/plugins.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/gijgo.min.js')}}"></script>
+
+
+
+    <!--contact js-->
+    <script src="{{ url_for('static', filename='js/contact.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.form.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.validate.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/mail-script.js')}}"></script>
+
+
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
